@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-core
+    compile group: 'org.mongodb', name: 'mongodb-driver-core', version: '4.0.4'
+    compile group: 'org.mongodb', name: 'mongodb-driver-sync', version: '4.0.4'
+    // https://mvnrepository.com/artifact/org.mongodb/bson
+    compile group: 'org.mongodb', name: 'bson', version: '4.0.4'
+
+}
